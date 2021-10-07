@@ -27,12 +27,30 @@ header {
   padding-right: 16px;
 }
 
-.header_light-dark-mode:hover .sun {
-  color: var(--sun-hover-color);
+/* Sun effect */
+.header_light-dark-mode #sun {
+  transition: transform 0.5s linear;
+}
+.header_light-dark-mode:hover #sun {
+  transform: scale(1.1) rotate(90deg);
+}
+.header_light-dark-mode:hover #sun path {
   fill: var(--sun-hover-color);
 }
+.header_light-dark-mode:hover #sun-text {
+  color: var(--sun-hover-color);
+}
 
-.header_light-dark-mode:hover .moon {
-  color: var(--moon-hover-color);
+/* moon effect */
+.header_light-dark-mode #moon {
+  transition: transform 0.5s linear;
+}
+.header_light-dark-mode:hover #moon {
+  transform: scale(1.1) rotateY(180deg);
+}
+.header_light-dark-mode:hover #moon path {
   fill: var(--moon-hover-color);
+}
+.header_light-dark-mode:hover #moon-text {
+  color: var(--moon-hover-color);
 }
