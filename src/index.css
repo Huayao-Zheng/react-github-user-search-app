@@ -7,6 +7,7 @@
   --h1-color: #2b3442;
   --blue: #0079ff;
   --logo-text-color: #222731;
+  --moon-hover-color: #222731;
 }
 
 .dark-theme {
@@ -15,6 +16,7 @@
   --text-color: #ffffff;
   --h1-color: #ffffff;
   --logo-text-color: #ffffff;
+  --sun-hover-color: #90a4d4;
 }
 
 * {
@@ -22,10 +24,19 @@
 }
 
 body,
-#root {
-  background: var(--primary-bg-color);
+#root,
+#container {
   margin: 0;
-  font-family: 'Space Mono', sans-serif;
   height: 100vh;
   width: 100vw;
+}
+
+#root {
+  background: var(--primary-bg-color);
+}
+
+#container {
+  font-family: 'Space Mono', sans-serif;
+  width: 87.2%;
+  margin: auto;
 }

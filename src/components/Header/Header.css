@@ -2,7 +2,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 87.2%;
   margin: 0 auto 36px auto;
   padding-top: 31px;
 }
@@ -21,8 +20,19 @@ header {
   font-weight: bold;
   line-height: 20px;
   letter-spacing: 2.5px;
+  cursor: pointer;
 }
 
 .header_light-dark-mode span {
   padding-right: 16px;
+}
+
+.header_light-dark-mode:hover .sun {
+  color: var(--sun-hover-color);
+  fill: var(--sun-hover-color);
+}
+
+.header_light-dark-mode:hover .moon {
+  color: var(--moon-hover-color);
+  fill: var(--moon-hover-color);
 }
