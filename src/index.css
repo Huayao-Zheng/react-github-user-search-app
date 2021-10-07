@@ -8,19 +8,26 @@
   --blue: #0079ff;
   --logo-text-color: #222731;
   --moon-hover-color: #222731;
+  --input-text-color: #222731;
+  --box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+  --search-btn-bg-color: #0079ff;
+  --search-btn-text-color: #ffffff;
 }
 
 .dark-theme {
   --primary-bg-color: #141d2f;
-  --secondary-bg-color: #fefefe;
+  --secondary-bg-color: #1e2a47;
   --text-color: #ffffff;
   --h1-color: #ffffff;
   --logo-text-color: #ffffff;
   --sun-hover-color: #90a4d4;
+  --input-text-color: #ffffff;
+  --box-shadow: 0;
 }
 
 * {
   box-sizing: border-box;
+  font-family: 'Space Mono', sans-serif;
 }
 
 body,
@@ -36,7 +43,6 @@ body,
 }
 
 #container {
-  font-family: 'Space Mono', sans-serif;
   width: 87.2%;
   margin: auto;
 }

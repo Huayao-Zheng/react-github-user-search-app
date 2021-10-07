@@ -1,0 +1,60 @@
+#form-container {
+  width: 100%;
+  height: 60px;
+}
+
+#form-container > form {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#form-container > form > .search-magnifier {
+  position: absolute;
+  top: 20px;
+  left: 16px;
+  height: 20px;
+  width: 20px;
+}
+#form-container > form > .input {
+  background-color: var(--secondary-bg-color);
+  color: var(--input-text-color);
+  font-family: 'Space Mono';
+  font-size: 13px;
+  line-height: 25px;
+  width: 100%;
+  height: 100%;
+  padding: 18px 98px 18px 45px;
+  border: none;
+  outline: none;
+  box-shadow: var(--box-shadow);
+  border-radius: 15px;
+}
+#form-container > form > .input::placeholder {
+  color: var(--text-color);
+}
+#form-container > form > .search-btn {
+  background: var(--search-btn-bg-color);
+  color: var(--search-btn-text-color);
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 21px;
+  position: absolute;
+  width: 84px;
+  height: 46px;
+  top: 7px;
+  right: 7px;
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1439px) {
+  #form-container > form > .search-magnifier {
+    height: 24px;
+    width: 24px;
+  }
+}
+
+/* destop */
+@media (min-width: 1440px) {
+}
