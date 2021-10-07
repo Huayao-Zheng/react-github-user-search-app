@@ -1,0 +1,28 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 87.2%;
+  margin: 0 auto 36px auto;
+  padding-top: 31px;
+}
+
+.header_logo-text {
+  color: var(--logo-text-color);
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 38px;
+}
+
+.header_light-dark-mode {
+  display: flex;
+  color: var(--text-color);
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 20px;
+  letter-spacing: 2.5px;
+}
+
+.header_light-dark-mode span {
+  padding-right: 16px;
+}
