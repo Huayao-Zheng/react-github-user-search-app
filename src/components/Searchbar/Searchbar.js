@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './Searchbar.css';
 
 const searchClass = (
@@ -23,8 +23,11 @@ const Searchbar = () => {
     setInput(e.target.value);
   };
 
-  const onSearch = (e) => {
+  const onSearch = async (e) => {
     e.preventDefault();
+    const response = await fetch(`https://api.github.com/users/${input}`);
+    const data = await response.json();
+    console.log('===>', data);
   };
 
   return (

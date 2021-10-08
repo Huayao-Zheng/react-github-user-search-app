@@ -21,22 +21,22 @@ const moon = (
 );
 
 const Header = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-  const isWindowDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
+  const [isOnDarkMode, setIsDarkMode] = useState(false);
+  const isWindowOnDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
   const modeToggleClassList = document.getElementById('root').classList;
 
   useEffect(() => {
-    if (isWindowDarkMode === true) {
+    if (isWindowOnDarkMode === true) {
       modeToggleClassList.add('dark-theme');
       setIsDarkMode(true);
     } else {
       modeToggleClassList.remove('dark-theme');
       setIsDarkMode(false);
     }
-  }, [isWindowDarkMode, modeToggleClassList]);
+  }, [isWindowOnDarkMode, modeToggleClassList]);
 
   const onThemeClick = () => {
-    if (modeToggleClassList.length === 1) {
+    if (modeToggleClassList.contains('dark-theme')) {
       modeToggleClassList.remove('dark-theme');
       setIsDarkMode(false);
     } else {
@@ -49,7 +49,7 @@ const Header = () => {
     <header>
       <div className="header_logo-text">devfiner</div>
       <div className="header_light-dark-mode" onClick={onThemeClick}>
-        {isDarkMode ? (
+        {isOnDarkMode ? (
           <>
             <span id="sun-text">LIGHT</span>
             {sun}
