@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { useMediaQuery } from '../../misc/custon-hook';
 import './Header.css';
 
 const sun = (
@@ -21,12 +22,27 @@ const moon = (
 
 const Header = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const isWindowDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
+  const modeToggleClassList = document.getElementById('root').classList;
+
+  useEffect(() => {
+    if (isWindowDarkMode === true) {
+      modeToggleClassList.add('dark-theme');
+      setIsDarkMode(true);
+    } else {
+      modeToggleClassList.remove('dark-theme');
+      setIsDarkMode(false);
+    }
+  }, [isWindowDarkMode, modeToggleClassList]);
 
   const onThemeClick = () => {
-    const modeToggle = document.getElementById('root');
-
-    setIsDarkMode((boolean) => !boolean);
-    modeToggle.classList.toggle('dark-theme');
+    if (modeToggleClassList.length === 1) {
+      modeToggleClassList.remove('dark-theme');
+      setIsDarkMode(false);
+    } else {
+      modeToggleClassList.add('dark-theme');
+      setIsDarkMode(true);
+    }
   };
 
   return (
