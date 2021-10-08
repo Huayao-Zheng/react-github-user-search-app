@@ -16,7 +16,7 @@ const searchClass = (
   </svg>
 );
 
-const Searchbar = () => {
+const Searchbar = ({ setUserProfile }) => {
   const [input, setInput] = useState('');
 
   const onInputChange = (e) => {
@@ -27,6 +27,7 @@ const Searchbar = () => {
     e.preventDefault();
     const response = await fetch(`https://api.github.com/users/${input}`);
     const data = await response.json();
+    setUserProfile(data);
     console.log('===>', data);
   };
 
