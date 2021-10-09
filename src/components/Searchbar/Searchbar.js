@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './Searchbar.css';
 
-const searchClass = (
+const searchMagnifier = (
   <svg
     viewBox="0 0 25 25"
     className="search-magnifier"
@@ -32,6 +32,7 @@ const Searchbar = ({ setUserProfile }) => {
       const noResultSpan = document.querySelector('.no-results');
 
       if (data.message === 'Not Found') {
+        setUserProfile(null);
         noResultSpan.innerHTML = 'No results';
       } else {
         setUserProfile(data);
@@ -45,14 +46,14 @@ const Searchbar = ({ setUserProfile }) => {
   return (
     <div id="form-container">
       <form onSubmit={onSearch}>
-        {searchClass}
+        {searchMagnifier}
         <input
           className="input"
           value={input}
           onChange={onInputChange}
           placeholder="Search GitHub username…"
         />
-        <span className="no-results"></span>
+        <span className="no-results" />
         <input type="submit" value="Search" className="search-btn" />
       </form>
     </div>
