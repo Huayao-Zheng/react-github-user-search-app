@@ -25,10 +25,21 @@ const Searchbar = ({ setUserProfile }) => {
 
   const onSearch = async (e) => {
     e.preventDefault();
-    const response = await fetch(`https://api.github.com/users/${input}`);
-    const data = await response.json();
-    setUserProfile(data);
-    console.log('===>', data);
+
+    try {
+      const response = await fetch(`https://api.github.com/users/${input}`);
+      const data = await response.json();
+      const noResultSpan = document.querySelector('.no-results');
+
+      if (data.message === 'Not Found') {
+        noResultSpan.innerHTML = 'No results';
+      } else {
+        setUserProfile(data);
+        noResultSpan.innerHTML = '';
+      }
+    } catch (err) {
+      console.error(err);
+    }
   };
 
   return (
@@ -41,6 +52,7 @@ const Searchbar = ({ setUserProfile }) => {
           onChange={onInputChange}
           placeholder="Search GitHub username…"
         />
+        <span className="no-results"></span>
         <input type="submit" value="Search" className="search-btn" />
       </form>
     </div>

@@ -32,6 +32,15 @@
 #form-container > form > .input::placeholder {
   color: var(--text-color);
 }
+#form-container > form > .no-results {
+  position: absolute;
+  top: -22px;
+  right: 13px;
+  color: #f74646;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 22px;
+}
 #form-container > form > .search-btn {
   background: var(--search-btn-bg-color);
   color: var(--search-btn-text-color);
