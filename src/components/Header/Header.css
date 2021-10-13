@@ -54,3 +54,9 @@ header {
 .header_light-dark-mode:hover #moon-text {
   color: var(--moon-hover-color);
 }
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  header {
+    padding-top: 142px;
+  }
+}

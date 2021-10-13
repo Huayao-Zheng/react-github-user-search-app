@@ -2,6 +2,7 @@ import React from 'react';
 
 const UserLinkBlog = ({ blog }) => {
   const isBlogAvailable = blog.length > 0;
+  const isBeginWithHttps = blog.slice(0, 8) === 'https://';
 
   return (
     <div
@@ -22,7 +23,7 @@ const UserLinkBlog = ({ blog }) => {
       </svg>
       <a
         className="user__blog__link"
-        href={`https://${blog}`}
+        href={`${isBeginWithHttps ? blog : `https://${blog}`}`}
         target="_blank"
         rel="noreferrer"
       >

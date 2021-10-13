@@ -103,12 +103,103 @@ a:hover {
 .link-not-avalible svg path {
   fill: #ccc !important;
 }
+.user__links-container {
+  padding-bottom: 48px;
+}
 .user__links-container span,
 .user__links-container a {
   font-size: 13px;
   line-height: 19px;
   color: var(--text-color);
 }
-.user__company {
-  padding-bottom: 48px;
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1439px) {
+  .user {
+    width: 86.02%;
+  }
+  .user__title-container {
+    padding-top: 40px;
+    margin-bottom: 24px;
+  }
+  .user__avatar-container {
+    width: 117px;
+    height: 117px;
+    margin-right: 41px;
+  }
+  .user__name {
+    font-size: 26px;
+    line-height: 39px;
+    margin-bottom: 2px;
+  }
+  .user__login {
+    margin-bottom: 4px;
+  }
+  .user__login a {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .user_joined-day {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .user__names-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .user__bio {
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 32px;
+  }
+  .user__repos-followers-following-container {
+    justify-content: flex-start;
+    margin-bottom: 30px;
+  }
+  .user__repos {
+    margin: 0 99px 0 32px;
+  }
+  .user__followers {
+    margin-right: 82px;
+  }
+  .user__repos__name,
+  .user__followers__name,
+  .user__following__name {
+    font-size: 13px;
+    line-height: 19px;
+  }
+  .user__repos__num,
+  .user__followers__num,
+  .user__following__num {
+    font-size: 22px;
+    line-height: 33px;
+  }
+  .user__links-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+  }
+  .user__location,
+  .user__blog,
+  .user__twitter,
+  .user__company {
+    flex-basis: 50%;
+  }
+  .user__location {
+    order: 1;
+  }
+  .user__blog {
+    order: 3;
+  }
+  .user__twitter {
+    order: 2;
+  }
+  .user__company {
+    order: 4;
+  }
+}
+
+/* destop */
+@media (min-width: 1440px) {
 }

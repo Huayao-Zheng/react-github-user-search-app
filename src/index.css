@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 :root {
   --primary-bg-color: #f6f8ff;
   --secondary-bg-color: #fefefe;
@@ -50,4 +49,10 @@ body,
 #container {
   width: 87.2%;
   margin: auto;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  #container {
+    width: 74.5%;
+  }
 }
