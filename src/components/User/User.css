@@ -95,6 +95,7 @@ a:hover {
   fill: var(--text-color);
 }
 .link-not-avalible,
+.link-not-avalible span,
 .link-not-avalible a {
   pointer-events: none !important;
   color: #ccc !important;
