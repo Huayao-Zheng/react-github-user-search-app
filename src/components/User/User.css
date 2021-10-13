@@ -1,0 +1,47 @@
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.user-background {
+  background: var(--secondary-bg-color);
+  box-shadow: var(--box-shadow2);
+  border-radius: 15px;
+}
+.user {
+  width: 85.3%;
+  margin: 0 auto;
+}
+.user__title-container {
+  display: flex;
+  padding-top: 32px;
+  margin-bottom: 33px;
+}
+.user__avatar-container {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 19px;
+}
+.user__avatar {
+  height: 100%;
+  width: 100%;
+}
+.user__name {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--h1-color);
+}
+.user__login a {
+  font-size: 13px;
+  line-height: 19px;
+  color: #0079ff;
+}
+.user_joined-day {
+  font-size: 13px;
+  line-height: 19px;
+  color: var(--joined-text-color);
+}

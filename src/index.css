@@ -4,12 +4,14 @@
   --primary-bg-color: #f6f8ff;
   --secondary-bg-color: #fefefe;
   --text-color: #4b6a9b;
+  --joined-text-color: #697c9a;
   --h1-color: #2b3442;
   --blue: #0079ff;
   --logo-text-color: #222731;
   --moon-hover-color: #222731;
   --input-text-color: #222731;
   --box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+  --box-shadow2: 0px 16px 30px rgba(70, 96, 187, 0.198567);
   --search-btn-bg-color: #0079ff;
   --search-btn-bg-hover-color: #60abff;
   --search-btn-text-color: #ffffff;
@@ -19,11 +21,13 @@
   --primary-bg-color: #141d2f;
   --secondary-bg-color: #1e2a47;
   --text-color: #ffffff;
+  --joined-text-color: #ffffff;
   --h1-color: #ffffff;
   --logo-text-color: #ffffff;
   --sun-hover-color: #90a4d4;
   --input-text-color: #ffffff;
   --box-shadow: 0;
+  --box-shadow2: 0;
 }
 
 * {

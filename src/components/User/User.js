@@ -11,11 +11,13 @@ const User = ({ userProfile }) => {
   }
 
   return (
-    <div className="user">
-      <UserTitle {...userProfile} />
-      <UserBio {...userProfile} />
-      <UserReposFollowersFollwing {...userProfile} />
-      <UserLinks {...userProfile} />
+    <div className="user-background">
+      <div className="user">
+        <UserTitle {...userProfile} />
+        <UserBio {...userProfile} />
+        <UserReposFollowersFollwing {...userProfile} />
+        <UserLinks {...userProfile} />
+      </div>
     </div>
   );
 };
