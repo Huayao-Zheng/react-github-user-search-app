@@ -35,6 +35,7 @@ const Searchbar = ({ setUserProfile }) => {
         setUserProfile(null);
         noResultSpan.innerHTML = 'No results';
       } else {
+        setInput('');
         setUserProfile(data);
         noResultSpan.innerHTML = '';
       }

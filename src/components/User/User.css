@@ -58,6 +58,7 @@ a:hover {
   background: var(--primary-bg-color);
   border-radius: 10px;
   height: 85px;
+  margin-bottom: 24px;
 }
 .user__repos,
 .user__followers,
@@ -79,4 +80,34 @@ a:hover {
   font-weight: bold;
   line-height: 24px;
   color: var(--h1-color);
+}
+.user__location,
+.user__blog,
+.user__twitter,
+.user__company {
+  display: flex;
+  margin-bottom: 16px;
+}
+.user__Link-icons {
+  margin-right: 13px;
+}
+.user__Link-icons path {
+  fill: var(--text-color);
+}
+.link-not-avalible,
+.link-not-avalible a {
+  pointer-events: none !important;
+  color: #ccc !important;
+}
+.link-not-avalible svg path {
+  fill: #ccc !important;
+}
+.user__links-container span,
+.user__links-container a {
+  font-size: 13px;
+  line-height: 19px;
+  color: var(--text-color);
+}
+.user__company {
+  padding-bottom: 48px;
 }

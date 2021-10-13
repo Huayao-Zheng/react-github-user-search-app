@@ -5,7 +5,7 @@ import User from './components/User/User';
 
 function App() {
   const [userProfile, setUserProfile] = useState(null);
-  console.log('profile', userProfile);
+
   return (
     <div id="container">
       <Header></Header>
