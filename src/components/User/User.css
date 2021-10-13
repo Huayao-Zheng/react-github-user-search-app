@@ -45,3 +45,9 @@ a:hover {
   line-height: 19px;
   color: var(--joined-text-color);
 }
+.user__bio {
+  font-size: 13px;
+  line-height: 25px;
+  color: var(--text-color);
+  margin-bottom: 23px;
+}
