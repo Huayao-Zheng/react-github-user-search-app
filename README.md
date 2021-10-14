@@ -33,8 +33,6 @@ Users should be able to:
 - [Live](https://your-solution-url.com)
 - [Solution](https://your-live-site-url.com)
 
-## My process
-
 ### Built with
 
 - HTML5
