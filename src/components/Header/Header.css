@@ -55,8 +55,16 @@ header {
   color: var(--moon-hover-color);
 }
 
-@media (min-width: 768px) and (max-width: 1439px) {
+/* tablet */
+@media (min-width: 768px) {
   header {
     padding-top: 142px;
+  }
+}
+
+/* destop */
+@media (min-width: 980px) {
+  header {
+    padding-top: 144px;
   }
 }

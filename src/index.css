@@ -47,11 +47,12 @@ body,
 }
 
 #container {
+  max-width: 730px;
   width: 87.2%;
   margin: auto;
 }
 
-@media (min-width: 768px) and (max-width: 1439px) {
+@media (min-width: 768px) {
   #container {
     width: 74.5%;
   }

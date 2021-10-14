@@ -60,6 +60,11 @@ a:hover {
   height: 85px;
   margin-bottom: 24px;
 }
+.user__bio,
+.user__repos-followers-following-container,
+.user__links-container {
+  max-width: 480px;
+}
 .user__repos,
 .user__followers,
 .user__following {
@@ -114,7 +119,7 @@ a:hover {
 }
 
 /* tablet */
-@media (min-width: 768px) and (max-width: 1439px) {
+@media (min-width: 768px) {
   .user {
     width: 86.02%;
   }
@@ -201,5 +206,25 @@ a:hover {
 }
 
 /* destop */
-@media (min-width: 1440px) {
+@media (min-width: 980px) {
+  .user__avatar-container {
+    margin-right: 37px;
+  }
+  .user__names-container {
+    position: relative;
+    flex-grow: 2;
+  }
+  .user_joined-day {
+    position: absolute;
+    top: 32.5px;
+    right: 0;
+  }
+  .user__bio,
+  .user__repos-followers-following-container,
+  .user__links-container {
+    margin-left: auto;
+  }
+  .user__title-container {
+    margin: 0;
+  }
 }
