@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- [Live](https://your-solution-url.com)
-- [Solution](https://your-live-site-url.com)
+- [Live](https://lonelybuddy.github.io/react-github-user-search-app/)
+- [Solution](https://www.frontendmentor.io/solutions/kinda-responsive-githubusersearchapp-using-html-css-js-andreact-P1Y-nDqI1)
 
 ### Built with
 
